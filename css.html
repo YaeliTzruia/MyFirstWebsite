@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
+    <title>Datakommunikation och webbadresser</title>
+  </head>
+  <body>
+    <nav class="nav-bar-container">
+     <div class="navbar-title">
+      <img class="title-img" src="./assets/code.jpg" alt="symbol">
+            <h1 >
+                Css frågor och svar
+              </h1>
+     </div>
+      <ul class="nav-ul">
+        <li class="nav-link">
+            <a href="index.html"">Data  &amp webb</a>
+          </li>
+        <li class="nav-link">
+          <a href="css.html">Css</a>
+        </li>
+        <li class="nav-link">
+          <a href="htmlQA.html">Html</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="grid-box-flex">
+      <div class="question-container"> 
+            <h2>Frågor</h2>
+        <ol class="question-content">
+          <li>Vad är en regel i CSS och vad består den av?</li>
+          <li>Vad är skillnaden mellan id och class? När bör man använda id respektive class?</li>
+        </ol>
+        </div>
+      </div>
+      <div class="grid-box-flex"> 
+        <div class="question-container">
+            <h2>Svar</h2>
+            <ol>
+                <li>
+                    <p> struktur-regeln i css är att en selector inehåller en egenskap och ett värde. Selectorn är namnet på våran class/pseudo-class/html element/id/attribut som vi vill designa. Man kan även tilldela selectorn med yttligare information som till exempel :hover, :active mm. En egenskap är en utav de existerande egenskapeerna som finns tex; fontsize, display, width, height. Värdet är det som du vill ge elementet tex; 18px, flex, 20%, 100rem. Ifall selectorn är ett html element så behövs inget tecken men en class behöver en punkt innan namnet och id behöver ett #. För att använda flera element som en selector så skrivs de tillsammans med ett kommatecken emellan dem. 
+                   </p>
+                   <div class="css-img">
+                   <img class="css-img" src="./assets/css.png" alt="css code"/>
+                   </div>
+                </li>
+                <li >
+                    <p>En class är ämnad för att designa ett speciellt element och kan repiteras, medans ett id används endast en gång och ska vara unikt. Detta är för att ett id kan, förutom att användas i css så som en class, även används i funktioner i bland annat jacascript. Om ett id används som en class, dvs repiteras på flera olika platser, så finns det en risk att det skapar problem med olika funktioner längre fram. Därför ska ett id användas när du vill referera det elementet längre fram i tex en function med; document.getElementById('id-name'). Med andra ord, en class används för att referera till en eller flera element, kan repiteras och används til mesta dels när man vill designa dessa element i css. Ett id kan användas på samma sätt som en class i css men får inte repiteras. Ett id används till största dels när man vill referensera ett element i en function.</p>
+                </li>
+            </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

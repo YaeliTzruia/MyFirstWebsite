@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
+    <title>Datakommunikation och webbadresser</title>
+  </head>
+  <body>
+    <nav class="nav-bar-container">
+     <div class="navbar-title">
+        <img class="title-img" src="./assets/www.jpg" alt="symbol">
+        <h1 >
+            Datakommunikation och webbadresser
+          </h1>
+     </div>
+      <ul class="nav-ul">
+        <li class="nav-link">
+            <a href="index.html"">Data &amp webb</a>
+          </li>
+        <li class="nav-link">
+          <a href="css.html">Css</a>
+        </li>
+        <li class="nav-link">
+          <a href="htmlQA.html">Html</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="grid-box-flex">
+      <div class="question-container"> 
+            <h2>Frågor</h2>
+        <ol class="question-content">
+            <li>Vad avses med termerna klient och server?</li>
+            <li>Beskriv vad var och en av protokollen TCP och IP gör på sändande och mottagande sida.</li>
+            <li>Beskriv de delar som följande url består av:
+               <div class="outside-link" id="link"> http://webbteknik.abc.se:8082/kurs1/uppg/u1.html#fragor</div> 
+            </li>
+        </ol>
+        </div>
+      </div>
+      <div class="grid-box-flex"> 
+        <div class="question-container">
+            <h2>Svar</h2>
+            <ol>
+                <li>
+                    <p>Klienten är en webläsare, dvs den motagand delen av en server, eller den som begär en tjänst i en klient/servermodell av ett system. Servern bekänar klienten med den information den förfrågar. i Servern lagras all information.</p>
+                </li>
+                <li>
+                  <p> IP = internet protocoll. varje enhet ansluten till internet har en unik IP-adress.
+                    TCP har han om de informationspaket som skickas medan IP har hand om adresseringen för informationspaketen. </p>
+                   
+                   <p>På sändarens sida sköter TCP uppdelningen av den imformation (websida/fil) som ska skickas. Denna information delas upp, numreras och skickas sedan vidare till IP som tar emot och omvandla denna information till IP-adresser och skickar sedan denna information tillbacks till TCP som i sin tur organiserar och sätter samman paketen till meddelanden och skickar vidare den sammansatta information till det program den var avsätt för. Ifall ett informationspacket saknas så kommer TCP sända ut ett begär efter detta paket från motagaren.
+                  </p>
+              </li>
+                <li>
+                    <p>
+                      <ul>
+                        <li>http: tjänst-protokoll, </li>
+                         <li>webbteknik.abc: domännamn & underdomän/address till serven</li> 
+                         <li>.se : nationell toppdomän</li>
+                         <li>:8082 : port nummer 8082</li>
+                         <li>kurs1/uppg: sökväg/mappar/namnet på den spesifika routen </li> 
+                          <li>/u1.html: filnamn </li> 
+                          <li>#fragor: stycke</li>
+                      </ul>
+                    </p>
+                </li>
+            </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
